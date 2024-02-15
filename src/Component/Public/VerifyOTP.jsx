@@ -32,14 +32,14 @@ const VerifyOTP = () => {
 
   return (
     <header className="flex justify-center ">
-      <div className="w-1/2 h-96 bg-orange-400 mt-32">
-        <div className="h-96 bg-green-400 w-72 border-2 border-black">
+      <div className="w-1/2 h-96 bg-blue-500 mt-32 border-2 border-black shadow-2xl">
+        <div className="h-96 bg-white w-72 border-r-2 border-black border-b-2">
           <h3 className="text-2xl pt-6 pl-2.5 font-bold">Varify Your OTP</h3>
           <img src="/Images\otp1.webp" alt="" />
         </div>
 
         <div className="ml-80 -mt-80 font-bold">
-          <label htmlFor="" className="pr-8">
+          <label htmlFor="" className="pr-8 text-white">
             Enter the OTP
           </label>
           <input

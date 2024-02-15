@@ -31,8 +31,8 @@ const Login = () => {
   };
   return (
     <header className="flex justify-center  ">
-      <div className="w-1/2 h-96 bg-gray-400 mt-32">
-        <div className="h-96 bg-green-400 w-72 border-2 border-black">
+      <div className="w-1/2 h-96 bg-blue-500 mt-32 shadow-2xl border-2 border-black ">
+        <div className="h-96 bg-white w-72  border-r-2 border-black border-b-2">
           <h3 className="text-2xl pt-6 pl-2.5 font-bold">Login</h3>
           <h4 className="text-1xl pt-4 pl-2.5 font-bold">
             Get access to your Orders, Wishlist and Recommendations
@@ -41,7 +41,7 @@ const Login = () => {
         </div>
 
         <div className="ml-80 -mt-80">
-          <label htmlFor="" className="pr-8 font-bold">
+          <label htmlFor="" className="pr-8 font-bold text-white">
             Email
           </label>
           <input
@@ -53,11 +53,11 @@ const Login = () => {
           />
           <br />
           <br />
-          <label htmlFor="" className="pr-8 font-bold ">
+          <label htmlFor="" className="pr-8 font-bold text-white">
             Password
           </label>
           <input
-            type="text"
+            type="password"
             className="w-60 pl-3"
             onChange={(event) => setPassword(event.target.value)}
           />
@@ -66,7 +66,7 @@ const Login = () => {
 
           <button
             onClick={handleRegistration}
-            className="border-2  border-black  px-1 py-0.5 bg-white font-bold"
+            className="border-2  border-black  px-1 py-0.5 bg-white font-bold " 
           >
             Submit
           </button>

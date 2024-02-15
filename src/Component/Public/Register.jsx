@@ -43,8 +43,8 @@ const Register = ({ role }) => {
 
   return (
     <header className="flex justify-center">
-      <div className="w-1/2 h-96 bg-red-300 mt-32  ">
-        <div className="h-96 bg-green-400 w-72 border-2 border-black ">
+      <div className="w-1/2 h-96 bg-blue-500 mt-32  border-2 border-black shadow-2xl" >
+        <div className="h-96 bg-white w-72 border-r-2 border-black border-b-2 ">
           <h3 className="text-2xl pt-4 pl-2.5 font-bold">Register</h3>
           <h4 className="text-1xl pt-1 pl-2.5 font-bold">
             Sign up with your email to get started
@@ -53,7 +53,7 @@ const Register = ({ role }) => {
         </div>
 
         <div className="ml-80 -mt-80 font-bold ">
-          <label htmlFor="" className="pr-8">
+          <label htmlFor="" className="pr-8 text-white">
             Email
           </label>
           <input
@@ -63,7 +63,7 @@ const Register = ({ role }) => {
           />
           <br />
           <br />
-          <label htmlFor="" className="pr-8 font-bold">
+          <label htmlFor="" className="pr-8 font-bold text-white">
             Password
           </label>
           <input
