@@ -1,7 +1,10 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 const Register = ({ role }) => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -25,7 +28,14 @@ const Register = ({ role }) => {
     }
     try {
       const response = await axios.post(URL, body, header);
-      console.log(response);
+      console.log(response)
+      sessionStorage.setItem("email",email)
+      if(response.status===202)
+      {
+        navigate("/verify-otp")
+      }
+     
+  
     } catch (error) {
       console.log(error);
     }

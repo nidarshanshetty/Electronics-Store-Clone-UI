@@ -1,13 +1,33 @@
+import axios from "axios";
 import { useState } from "react";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const respond = (event) => {
+  const handleRegistration = async(event) => {
     event.preventDefault();
-    console.log(email);
-    console.log(password);
+
+    const URL = "http://localhost:8080/api/v1/login";
+    const body = {
+      email: email,
+      password: password,
+    }
+    const header = {
+      headers: {
+        "Content-Type": "application/json",
+      },
+      withCredetials:true
+    }
+
+    try {
+      const response = await axios.post(URL, body, header);
+      console.log(response)
+  
+    } catch (error) {
+      console.log(error);
+    }
+
   };
   return (
     <header className="flex justify-center  ">
@@ -45,7 +65,7 @@ const Login = () => {
           <br />
 
           <button
-            onClick={respond}
+            onClick={handleRegistration}
             className="border-2  border-black  px-1 py-0.5 bg-white font-bold"
           >
             Submit
