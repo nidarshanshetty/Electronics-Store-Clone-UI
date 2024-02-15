@@ -7,7 +7,7 @@ import navs from "./Component/Routes/Navigation";
 
 const user = {
   username: "",
-  role: "SELLER",
+  role: "ALL",
   isAuthenticated: true,
 };
 

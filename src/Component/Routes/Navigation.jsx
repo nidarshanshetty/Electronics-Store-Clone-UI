@@ -35,7 +35,7 @@ const navs = [
     role: "ALL",
   },
   {
-    path: "/varify-otp",
+    path: "/verify-otp",
     element: <VerifyOTP />,
     requireAuth: false,
     isVisibleAfterAuth: false,

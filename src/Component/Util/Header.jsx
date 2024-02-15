@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="h-20 w-svw  flex justify-around bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+    <header className="h-20 w-svw  flex justify-around bg-blue-600 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
       {/* LOGO */}
       <div className=" h-16 mt-2 w-40 ml-16  bg-blue-100 rounded-lg ">
         <img
-          src="Images\Flipkart-logo.png"
+          src="\Images\Flipkart-logo.png"
           alt=""
           className="h-16 mt-0 w-32"
         />
